@@ -1,0 +1,152 @@
+* {
+  border-radius: 10%;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: rgba(238, 252, 253, 0.4);
+  border-radius: 10%;
+}
+
+hr {
+  padding: 0;
+  margin:0;
+}
+.container {
+  column-count: 5;
+  margin: auto;
+  padding: 0;
+  height: 6rem;
+  width:100%;
+  grid-template-columns: 1fr; /* Adjust columns if needed, here it's 1 column */
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 1rem; /* Optional: Adds space between grid items */
+  border-radius: 10%;
+}
+
+button {
+  grid-column: span 1;
+  background: 
+  radial-gradient(
+    circle at 75% 30%,
+    #ffffee,
+    #ce020c
+
+  );
+  border: 1px solid rgba(36, 21, 4, 0.3);
+  margin: 0rem;
+  padding: 0;
+  font-size: 1rem;
+  border-radius: 5rem;
+  height: 5rem;
+  width: 5rem;
+  background-color: #020003; /* Optional: Add background color */
+  color: #000; /* Optional: Add text color */
+  cursor: pointer; /* Add pointer cursor for button */
+
+}
+button:hover {
+  grid-column: span 1;
+  background: 
+  radial-gradient(
+    circle at 75% 30%,
+    #ffffee,
+    #fd747b
+
+  );
+  border: 1px solid rgba(36, 21, 4, 0.3);
+  margin: 0rem;
+  padding: 0;
+  font-size: 1rem;
+  border-radius: 5rem;
+  height: 5rem;
+  width: 5rem;
+  background-color: #020003; /* Optional: Add background color */
+  color: #000; /* Optional: Add text color */
+  cursor: pointer; /* Add pointer cursor for button */
+
+}
+
+.ball-display {
+  border-radius: 50%; /* to make it a circle */
+  border: 1px solid rgba(36, 21, 4, 0.2);
+  background: 
+    radial-gradient(
+      circle at 75% 30%,
+      #ffffee,
+      #e7df67
+    );
+  grid-column: span 1;
+  display: grid;
+  font-size: 2rem;
+  border-radius: 5rem;
+  margin: 0 auto;
+  width: 5rem;
+  height: 5rem; /* Ensure height matches width for a perfect circle */
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center text inside the ball */
+  padding: 1rem;
+  break-after: always;
+}
+
+ul {
+  border-radius: 50%;
+  grid-column: span 3;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  padding: 0;
+  background-color: rgba(238, 249, 253, 0.2);
+  
+}
+li {
+  padding: 0px 5px 0 0;
+  text-wrap: pretty;
+  white-space: break-spaces;
+}
+
+#reset {
+  height: 1.5rem;  margin-right: 20%;
+  float:right;
+  background: 
+    radial-gradient(
+      circle at 75% 30%,
+      #ffffee,
+      rgba(34, 34, 230, 0.692));
+}
+#winCheck {
+  height: 1.5rem;  margin-right: 0%;
+  float:right;
+  background: 
+    radial-gradient(
+      circle at 75% 30%,
+      #ffffee,
+      rgb(158, 248, 226));
+     
+}
+
+#winCheck:hover {
+  height: 1.5rem;  margin-right: 0%;
+  float:right;
+  color:black;
+  background: 
+    radial-gradient(
+      circle at 75% 30%,
+      #ffffee,
+      rgb(2, 252, 189));
+}
+#reset:hover {
+  height: 1.5rem;  margin-right: 20%;
+  float:right;
+  color:white;
+  background: 
+    radial-gradient(
+      circle at 75% 30%,
+      #ffffee,
+      rgba(10, 10, 70, 0.692));
+}
